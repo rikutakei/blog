@@ -1,15 +1,107 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A Hugo website</title>
+    <title>Riku&#39;s Blog</title>
     <link>/</link>
-    <description>Recent content on A Hugo website</description>
+    <description>Recent content on Riku&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 22 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>-- Hi there, I&amp;rsquo;m Riku.
+I&amp;rsquo;m an Assistant Research Fellow at the University of Otago, working on projects geared towards Bioinformatics. I have worked with a variety of data during my Masters and my current job, including microarrays, RNA-seq, genotype data, and methylation microarray data.
+I think I&amp;rsquo;m pretty good with using terminal and programming, but I&amp;rsquo;d say I&amp;rsquo;m better at using Google. I mainly work on a Mac/Unix computer (sshing into a RHEL server, or a NeSI computer), and have Arch Linux running at home.</description>
+    </item>
+    
+    <item>
+      <title>Archives</title>
+      <link>/archives/</link>
+      <pubDate>Tue, 20 Mar 2018 18:05:25 +1300</pubDate>
+      
+      <guid>/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test Blog Post</title>
+      <link>/2018/03/09/test-blog-post/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/09/test-blog-post/</guid>
+      <description>Test Blog Post This is a test markdown document to see what I can do with blogdown</description>
+    </item>
+    
+    <item>
+      <title>Test Blog Post</title>
+      <link>/2018/03/09/test-blog-post/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/09/test-blog-post/</guid>
+      <description>Test Blog Post This is a test markdown document to see what I can do with blogdown</description>
+    </item>
+    
+    <item>
+      <title>Test Blog Post</title>
+      <link>/2018/03/09/test-blog-post/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/09/test-blog-post/</guid>
+      <description>Test Blog Post This is a test markdown document to see what I can do with blogdown</description>
+    </item>
+    
+    <item>
+      <title>Test Blog Post</title>
+      <link>/2018/03/09/test-blog-post/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/09/test-blog-post/</guid>
+      <description>Test Blog Post This is a test markdown document to see what I can do with blogdown</description>
+    </item>
+    
+    <item>
+      <title>Test Blog Post</title>
+      <link>/2018/03/09/test-blog-post/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/09/test-blog-post/</guid>
+      <description>Test Blog Post This is a test markdown document to see what I can do with blogdown</description>
+    </item>
+    
+    <item>
+      <title>Test Blog Post</title>
+      <link>/2018/03/09/test-blog-post/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/09/test-blog-post/</guid>
+      <description>Test Blog Post This is a test markdown document to see what I can do with blogdown</description>
+    </item>
+    
+    <item>
+      <title>Test Blog Post</title>
+      <link>/2018/03/09/test-blog-post/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/09/test-blog-post/</guid>
+      <description>Test Blog Post This is a test markdown document to see what I can do with blogdown</description>
+    </item>
+    
+    <item>
+      <title>Test Blog Post</title>
+      <link>/2018/03/09/test-blog-post/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/09/test-blog-post/</guid>
+      <description>Test Blog Post This is a test markdown document to see what I can do with blogdown</description>
+    </item>
     
     <item>
       <title>A Plain Markdown Post</title>
@@ -22,12 +114,13 @@
     </item>
     
     <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
+      <title>A Plain Markdown Post</title>
+      <link>/2016/12/30/a-plain-markdown-post/</link>
+      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
       
-      <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
+      <guid>/2016/12/30/a-plain-markdown-post/</guid>
+      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
+ You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
     </item>
     
     <item>
@@ -38,7 +131,7 @@
       <guid>/2015/07/23/hello-r-markdown/</guid>
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+summary(cars) ## speed dist  ## Min. : 4.0 Min. : 2.00  ## 1st Qu.:12.0 1st Qu.: 26.00  ## Median :15.0 Median : 36.00  ## Mean :15.</description>
     </item>
     
     <item>
