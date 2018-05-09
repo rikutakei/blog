@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A website built through Hugo and blogdown.">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.39" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="../../../../index.xml" type="application/rss+xml" title="Riku&#39;s Blog">
+<title>Vim Post Part 0: Should I Learn Vim? - Riku&#39;s Blog</title>
+</head>
+<body>
+
+	<header>
+		
+		<nav class="nav">
+			<ul class="nav-links" style="text-align: center">
+				<a class="path" href="../../../../">Home</a>
+				
+				<li> <a href="../../../../about/">About</a></li>
+				
+				<li> <a href="../../../../archives/">Archives</a></li>
+				
+				<li> <a href="../../../../tags/">Tags</a></li>
+				
+				<li> <a href="../../../../categories/">Categories</a></li>
+				
+				<li> <a href="https://github.com/rikutakei">GitHub</a></li>
+				
+				<li> <a href="../../../../index.xml" type="application/rss+xml" target="_blank"> <img src="images/social-rss-outline.png" alt="RSS" style="width:25px;height:25px;border:0; vertical-align: -6px"> </a> </li>
+			</ul>
+		</nav>
+		<div class="right">
+			
+		</div>
+	</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="headline" itemprop="headline">Vim Post Part 0: Should I Learn Vim?</h1>
+  <div class="meta">
+
+    <span class="key">Published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2018-04-18">April 18, 2018</time></span>
+
+
+    <span class="key">in</span>
+    <span class="val">
+
+        <a href="../../../../categories/vim">Vim</a>
+
+    </span>
+
+
+    <br>
+    <span class="key">[ Tags:</span>
+    <span class="val">
+        
+        <a href="../../../../tags/vim">vim</a>
+        
+        <a href="../../../../tags/howto">HowTo</a>
+        
+    </span>
+    ]
+    
+  </div>
+  <section class="body" itemprop="articleBody">
+    
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Vim is awesome.</p>
+
+<p>It&rsquo;s fast, &ldquo;robust&rdquo;, and it&rsquo;s always there when you need it the most.</p>
+
+<p>I was first introduced to Vim in my first year of MSc.
+It took me weeks and perhaps months of struggling and Google searching to become proficient in it, but I have no regret learning how to use it.</p>
+
+<p>Of course, there are other editors out there like Atom, nano and Emacs, and you should pick the one that suits you the best.
+For me, it was Vim.</p>
+
+<p>Partly because that was the first editor that I <em>properly</em> learnt and another reason was because I couldn&rsquo;t stand learning (or even attempt learning) other editor(s) after learning how to use Vim &ndash; everything seemed so <strong><em>slow</em></strong> after using Vim (probably because I had to use the mouse or arrow keys at one point).</p>
+
+<p>&nbsp;</p>
+
+<p>Anyhow, I think I&rsquo;ll get on with this post.</p>
+
+<p>In this post I want to cover the pros and cons of Vim, because if you know what&rsquo;s good or bad about something, you can usually make a good decision on your own by weighing out the options.</p>
+
+<p>So, let&rsquo;s get started.</p>
+
+<p>&nbsp;</p>
+
+<h1 id="pros-and-cons-of-vim">Pros and Cons of Vim</h1>
+
+<p>I&rsquo;m sure there are many other pros and cons of Vim, but these are the ones that I could think of at the time of writing this.</p>
+
+<p>Perhaps Google search &ldquo;vim emacs pros cons&rdquo; and you might find a whole StackOverflow thread dedicated to why either editors are better than the other.</p>
+
+<h2 id="pros">Pros</h2>
+
+<h4 id="1-it-can-be-found-on-any-linux-computer">1. It can be found on any linux computer</h4>
+
+<p>Vi/Vim and nano are the two text editors that I know for sure that are installed by default on <strong><em>ANY</em></strong> linux computer.</p>
+
+<p>This means that, as long as it&rsquo;s a linux computer, you can code on that computer as per usual.</p>
+
+<p>Some text editors aren&rsquo;t installed by default (Emacs is one of them &ndash; unless it&rsquo;s now been included in the basic install), so you have to either install it yourself, or ask the system admin to install it for you.</p>
+
+<p>To me, not even having to worry about the platform that I use to code is a big plus &ndash; it&rsquo;s like shopping overseas with your credit card, rather than exchanging cash everywhere you go.</p>
+
+<p>&nbsp;</p>
+
+<h4 id="2-default-vim-is-powerful">2. Default Vim is powerful</h4>
+
+<p>There are many plugins out there for various text editors, including Vim.
+However, base Vim is powerful enough that you don&rsquo;t <em>really</em> need them (although some of them do make life easier).</p>
+
+<p>Word completion, search with regex, find and replace with regex, macro, repeat edits, text buffers, windows and tabs &ndash; these are all functionality that Vim has by default, and it&rsquo;s probably enough for most people.</p>
+
+<p>Learn base Vim first (or at least the bulk of it), then move onto plugins.</p>
+
+<p>&nbsp;</p>
+
+<h4 id="3-key-bindings-are-common-across-bash-programs">3. Key-bindings are common across bash programs</h4>
+
+<p>Have you ever felt using <code>less</code>/<code>more</code>/<code>man</code> and alikes cumbersome and clunky?</p>
+
+<p>Can&rsquo;t find what you&rsquo;re looking for, because there are too many texts to scroll through and read?</p>
+
+<p>Well, if you learn Vim, that problem is essentially solved.</p>
+
+<p>This is because most of these programs allow page/cursor movement using Vim key-bindings.
+Not only that, it allows Vim-like (or more like perl-like) searching in these programs.</p>
+
+<p>So if you learn Vim, you will become more proficient in other programs as well.</p>
+
+<p>&nbsp;</p>
+
+<h2 id="cons">Cons</h2>
+
+<h4 id="1-steep-learning-curve">1. Steep learning curve</h4>
+
+<p>The learning curve is very steep, to put it in a nice way.</p>
+
+<p>It&rsquo;s like learning a new language &ndash; you need to use it constantly to learn how to use it.
+If you don&rsquo;t have that sort of time to spend, then you might want to have a look at other text editors.
+But in my opinion, it was a well spent time learning Vim, considering what I can do with it compared to other editors or IDE I have used.</p>
+
+<p>&nbsp;</p>
+
+<h4 id="2-confusing-and-not-straightforward">2. Confusing and not straightforward</h4>
+
+<p>I guess this can come under the previous point, but oh well.</p>
+
+<p>The way you edit in Vim is quite different to other text editors &ndash; you don&rsquo;t click or move the cursor to position where you want it to be, and then start typing.
+Rather, you enter a specific <em>&ldquo;mode&rdquo;</em> to write the text, then enter a different mode to edit/manipulate that text.</p>
+
+<p>It&rsquo;s like having multiple pens/pencils/crayons/paintbrushes to draw or write something.
+But different tools allow you to do different stuff, and that makes Vim both powerful and flexible.</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>There are many advantages of learning and using Vim, not just for coding, but for your overall skill in, for example, searching (with regex) and navigating around in terminal.
+However, this comes with a big disadvantage &ndash; steep learning curve.</p>
+
+<p>But I can guarantee you that the time spent learning Vim is worth it &ndash; everything becomes so much faster.</p>
+
+<p>&nbsp;</p>
+
+<p>I guess one thing about other editors is that you don&rsquo;t really explore the truly useful commands/shortcuts, because you become satisfied with what you already have, or there are too many things to learn &ndash; essentially only scratching the surface of the editor.</p>
+
+<p>But for Vim, it sort of forces you to explore and learn all of the functionality, because the bare minimum knowledge  to edit text/code is just not enough, and the bare minimum doesn&rsquo;t set Vim apart from other editors<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.</p>
+
+<p>&nbsp;</p>
+
+<p>In other words, if you intend to learn the bare minimum of Vim (or in fact the bare minimum of <strong><em>any</em></strong> text editor), then you should try another text editor &ndash; Vim won&rsquo;t be useful unless you learn all of the basic components<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>.</p>
+
+<p>I guess Vim is, in a sense, an &ldquo;all-or-nothing&rdquo; editor &ndash; <strong>you either learn it, or you don&rsquo;t, and there is no in-between</strong>.</p>
+
+<p>&nbsp;</p>
+
+<p>Anyway, this will be the end of this first (zero-th?) post about Vim.</p>
+
+<p>I will follow this up with more posts about Vim and basic functionality of Vim to get people going &ndash; enough so that they are able to code (relatively) efficiently with Vim.</p>
+
+<p>&nbsp;</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">By &ldquo;bare minimum&rdquo;, I am referring to moving around, changing/deleting/yanking/pasting texts, simple visual mode and nothing more &ndash; no &ldquo;dot&rdquo; commands, search/global option, macros.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">All the stuff I mention in 2) in the Pros section.
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+  </section>
+</article>
+
+</main>
+
+
+</div>
+
+<footer>
+  <div class="container">
+      <h6>
+          <span class="copyright">&copy; 2018  Riku&#39;s Blog,
+          <span class="base03"> generated with a modified </span>
+          <span class="base03">[</span><span class="base08">b</span><span class="base09">a</span><span class="base0a">s</span><span class="base0b">e</span><span class="base0c">1</span><span class="base0d">6</span><span class="base03">]</span>
+          <span class="base03"># _ theme</span>
+          - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+      </h6>
+  </div>
+</footer>
+
+</body>
+</html>
+

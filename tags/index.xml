@@ -1,15 +1,69 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on A Hugo website</title>
+    <title>Tags on Riku&#39;s Blog</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on A Hugo website</description>
+    <description>Recent content in Tags on Riku&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 18 Apr 2018 12:35:35 +1200</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Config</title>
+      <link>/tags/config/</link>
+      <pubDate>Wed, 18 Apr 2018 12:35:35 +1200</pubDate>
+      
+      <guid>/tags/config/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dot Files</title>
+      <link>/tags/dot-files/</link>
+      <pubDate>Wed, 18 Apr 2018 12:35:35 +1200</pubDate>
+      
+      <guid>/tags/dot-files/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>/tags/git/</link>
+      <pubDate>Wed, 18 Apr 2018 12:35:35 +1200</pubDate>
+      
+      <guid>/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Howto</title>
+      <link>/tags/howto/</link>
+      <pubDate>Mon, 07 May 2018 20:20:47 +1200</pubDate>
+      
+      <guid>/tags/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>/tags/hugo/</link>
+      <pubDate>Wed, 18 Apr 2018 16:32:30 +1200</pubDate>
+      
+      <guid>/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Make</title>
+      <link>/tags/make/</link>
+      <pubDate>Wed, 18 Apr 2018 16:32:30 +1200</pubDate>
+      
+      <guid>/tags/make/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Plot</title>
@@ -35,6 +89,15 @@
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>/tags/vim/</link>
+      <pubDate>Mon, 07 May 2018 20:20:47 +1200</pubDate>
+      
+      <guid>/tags/vim/</guid>
       <description></description>
     </item>
     

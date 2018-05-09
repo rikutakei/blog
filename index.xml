@@ -1,33 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A Hugo website</title>
+    <title>Riku&#39;s Blog</title>
     <link>/</link>
-    <description>Recent content on A Hugo website</description>
+    <description>Recent content on Riku&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 07 May 2018 20:20:47 +1200</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>A Plain Markdown Post</title>
-      <link>/2016/12/30/a-plain-markdown-post/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      <title>Vim Post Part 2: Moving Around in Vim</title>
+      <link>/2018/05/07/vim-post-part-2-moving-around-in-vim/</link>
+      <pubDate>Mon, 07 May 2018 20:20:47 +1200</pubDate>
       
-      <guid>/2016/12/30/a-plain-markdown-post/</guid>
-      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
- You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
+      <guid>/2018/05/07/vim-post-part-2-moving-around-in-vim/</guid>
+      <description>Introduction In my last post, I wrote about modes in Vim and how to save and quit out of Vim, but I didn&amp;rsquo;t touch on how to move around Vim.
+You might ask, &amp;ldquo;Why would I want to learn how to move around in Vim when you can just use the mouse and arrow keys?&amp;rdquo;
+There are a couple of reasons why you shouldn&amp;rsquo;t (or perhaps can&amp;rsquo;t) use the mouse or arrow keys.</description>
+    </item>
+    
+    <item>
+      <title>Vim Post Part 1: Modes of Vim and How to Exit Vim</title>
+      <link>/2018/05/01/vim-post-part-1-modes-of-vim-and-how-to-exit-vim/</link>
+      <pubDate>Tue, 01 May 2018 20:19:24 +1200</pubDate>
+      
+      <guid>/2018/05/01/vim-post-part-1-modes-of-vim-and-how-to-exit-vim/</guid>
+      <description>Introduction Alright, so you&amp;rsquo;ve decided that learning Vim was worth your precious time (and you&amp;rsquo;ve made the right choice).
+But where do you begin?
+Google is usually a good place to begin your search of &amp;ldquo;How do I learn Vim&amp;rdquo;. And it will probably tell you to go to a random Vim emulator website and/or tell you to fire up vimtutor on the command line to &amp;ldquo;get used to Vim&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Makefile for Hugo</title>
+      <link>/2018/04/18/makefile-for-hugo/</link>
+      <pubDate>Wed, 18 Apr 2018 16:32:30 +1200</pubDate>
+      
+      <guid>/2018/04/18/makefile-for-hugo/</guid>
+      <description>So, I&amp;rsquo;ve been using Hugo to generate this blog, and I thought I would make a Makefile to compile and clean up the working directory.
+&amp;nbsp;
+As you know, Hugo is pretty damn easy to use &amp;ndash; so easy that even I can make my own blog. So it is quite natural that you ask:
+ &amp;ldquo;Why the hell would you make a Makefile for such a simple task?&amp;rdquo;
+ The answer to that is:</description>
+    </item>
+    
+    <item>
+      <title>Vim Post Part 0: Should I Learn Vim?</title>
+      <link>/2018/04/18/vim-post-part-0-should-i-learn-vim/</link>
+      <pubDate>Wed, 18 Apr 2018 12:38:57 +1200</pubDate>
+      
+      <guid>/2018/04/18/vim-post-part-0-should-i-learn-vim/</guid>
+      <description>Introduction Vim is awesome.
+It&amp;rsquo;s fast, &amp;ldquo;robust&amp;rdquo;, and it&amp;rsquo;s always there when you need it the most.
+I was first introduced to Vim in my first year of MSc. It took me weeks and perhaps months of struggling and Google searching to become proficient in it, but I have no regret learning how to use it.
+Of course, there are other editors out there like Atom, nano and Emacs, and you should pick the one that suits you the best.</description>
+    </item>
+    
+    <item>
+      <title>Making Cross Platform Config Files</title>
+      <link>/2018/04/18/making-cross-platform-config-files/</link>
+      <pubDate>Wed, 18 Apr 2018 12:35:35 +1200</pubDate>
+      
+      <guid>/2018/04/18/making-cross-platform-config-files/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>About</title>
       <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
+      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
+      <description>-- Hi there, I&amp;rsquo;m Riku.
+I&amp;rsquo;m an Assistant Research Fellow at the University of Otago, working on projects geared towards Bioinformatics. I have worked with a variety of data during my Masters and my current job, including microarrays, RNA-seq, genotype data, and methylation microarray data.
+I think I&amp;rsquo;m pretty good with using terminal, but I&amp;rsquo;d say I&amp;rsquo;m better at using Google. I mainly work on a Mac/Unix computer (sshing into a linux server, or a NeSI computer), and have Arch Linux running at home.</description>
+    </item>
+    
+    <item>
+      <title>Archives</title>
+      <link>/archives/</link>
+      <pubDate>Tue, 20 Mar 2018 18:05:25 +1300</pubDate>
+      
+      <guid>/archives/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -38,16 +95,7 @@
       <guid>/2015/07/23/hello-r-markdown/</guid>
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/2015/01/01/lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      
-      <guid>/2015/01/01/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+summary(cars) ## speed dist  ## Min. : 4.0 Min. : 2.00  ## 1st Qu.:12.0 1st Qu.: 26.00  ## Median :15.0 Median : 36.00  ## Mean :15.</description>
     </item>
     
   </channel>

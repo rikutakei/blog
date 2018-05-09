@@ -1,151 +1,135 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.37" />
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A website built through Hugo and blogdown.">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.39" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="../../../../index.xml" type="application/rss+xml" title="Riku&#39;s Blog">
+<title>Hello R Markdown - Riku&#39;s Blog</title>
+</head>
+<body>
+
+	<header>
+		
+		<nav class="nav">
+			<ul class="nav-links" style="text-align: center">
+				<a class="path" href="../../../../">Home</a>
+				
+				<li> <a href="../../../../about/">About</a></li>
+				
+				<li> <a href="../../../../archives/">Archives</a></li>
+				
+				<li> <a href="../../../../tags/">Tags</a></li>
+				
+				<li> <a href="../../../../categories/">Categories</a></li>
+				
+				<li> <a href="https://github.com/rikutakei">GitHub</a></li>
+				
+				<li> <a href="../../../../index.xml" type="application/rss+xml" target="_blank"> <img src="images/social-rss-outline.png" alt="RSS" style="width:25px;height:25px;border:0; vertical-align: -6px"> </a> </li>
+			</ul>
+		</nav>
+		<div class="right">
+			
+		</div>
+	</header>
+
+<div class="container">
 
 
-<title>Hello R Markdown - A Hugo website</title>
-<meta property="og:title" content="Hello R Markdown - A Hugo website">
-
-
-
+<main role="main" class="article">
   
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="headline" itemprop="headline">Hello R Markdown</h1>
+  <div class="meta">
+
+    <span class="key">Published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2015-07-23">July 23, 2015</time></span>
 
 
+    <span class="key">in</span>
+    <span class="val">
+
+        <a href="../../../../categories/r">R</a>
+
+    </span>
 
 
-
-
-
-
-<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
-
-
-
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
-
-
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/logo.png"
-         width="50"
-         height="50"
-         alt="Logo">
-  </a>
-
-  <ul class="nav-links">
+    <br>
+    <span class="key">[ Tags:</span>
+    <span class="val">
+        
+        <a href="../../../../tags/r-markdown">R Markdown</a>
+        
+        <a href="../../../../tags/plot">plot</a>
+        
+        <a href="../../../../tags/regression">regression</a>
+        
+    </span>
+    ]
     
-    <li><a href="../../../../about/">About</a></li>
-    
-    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
-    
-    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
-    
-  </ul>
-</nav>
-
-      </header>
-
-
-<main class="content" role="main">
-
-  <article class="article">
-    
-    <span class="article-duration">1 min read</span>
+  </div>
+  <section class="body" itemprop="articleBody">
     
 
-    <h1 class="article-title">Hello R Markdown</h1>
+<h1 id="r-markdown">R Markdown</h1>
 
-    
-    <span class="article-date">2015/07/23</span>
-    
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</p>
 
-    <div class="article-content">
-      <div id="r-markdown" class="section level1">
-<h1>R Markdown</h1>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
 <p>You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &lt;- lm(dist ~ speed, data = cars)
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="kp">summary</span><span class="p">(</span>cars<span class="p">)</span>
+<span class="c1">##      speed           dist       </span>
+<span class="c1">##  Min.   : 4.0   Min.   :  2.00  </span>
+<span class="c1">##  1st Qu.:12.0   1st Qu.: 26.00  </span>
+<span class="c1">##  Median :15.0   Median : 36.00  </span>
+<span class="c1">##  Mean   :15.4   Mean   : 42.98  </span>
+<span class="c1">##  3rd Qu.:19.0   3rd Qu.: 56.00  </span>
+<span class="c1">##  Max.   :25.0   Max.   :120.00</span>
+fit <span class="o">&lt;-</span> lm<span class="p">(</span>dist <span class="o">~</span> speed<span class="p">,</span> data <span class="o">=</span> cars<span class="p">)</span>
 fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932</code></pre>
-</div>
-<div id="including-plots" class="section level1">
-<h1>Including Plots</h1>
-<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
-<pre class="r"><code>par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
-  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
-  init.angle = -50, border = NA
-)</code></pre>
-<div class="figure"><span id="fig:pie"></span>
-<img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
-<p class="caption">
-Figure 1: A fancy pie chart.
-</p>
-</div>
-</div>
+<span class="c1">## </span>
+<span class="c1">## Call:</span>
+<span class="c1">## lm(formula = dist ~ speed, data = cars)</span>
+<span class="c1">## </span>
+<span class="c1">## Coefficients:</span>
+<span class="c1">## (Intercept)        speed  </span>
+<span class="c1">##     -17.579        3.932</span></code></pre></div>
+<h1 id="including-plots">Including Plots</h1>
 
-    </div>
-  </article>
+<p>You can also embed plots. See Figure \@ref(fig:pie) for example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r">par<span class="p">(</span>mar <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
+pie<span class="p">(</span>
+  <span class="kt">c</span><span class="p">(</span><span class="m">280</span><span class="p">,</span> <span class="m">60</span><span class="p">,</span> <span class="m">20</span><span class="p">),</span>
+  <span class="kt">c</span><span class="p">(</span><span class="s">&#39;Sky&#39;</span><span class="p">,</span> <span class="s">&#39;Sunny side of pyramid&#39;</span><span class="p">,</span> <span class="s">&#39;Shady side of pyramid&#39;</span><span class="p">),</span>
+  col <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&#39;#0292D8&#39;</span><span class="p">,</span> <span class="s">&#39;#F7EA39&#39;</span><span class="p">,</span> <span class="s">&#39;#C4B632&#39;</span><span class="p">),</span>
+  init.angle <span class="o">=</span> <span class="m">-50</span><span class="p">,</span> border <span class="o">=</span> <span class="kc">NA</span>
+<span class="p">)</span></code></pre></div>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure_markdown_mmd/pie-1.png" alt="A fancy pie chart." /></p>
 
-  
-
+  </section>
+</article>
 
 </main>
 
-      <footer class="footer">
-        <ul class="footer-links">
-          <li>
-            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
-          </li>
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
-          </li>
-        </ul>
-      </footer>
 
-    </div>
-    
+</div>
 
+<footer>
+  <div class="container">
+      <h6>
+          <span class="copyright">&copy; 2018  Riku&#39;s Blog,
+          <span class="base03"> generated with a modified </span>
+          <span class="base03">[</span><span class="base08">b</span><span class="base09">a</span><span class="base0a">s</span><span class="base0b">e</span><span class="base0c">1</span><span class="base0d">6</span><span class="base03">]</span>
+          <span class="base03"># _ theme</span>
+          - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+      </h6>
+  </div>
+</footer>
 
-
-<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
-
-
-
-<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
-<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
-
-
-
-    
-
-    
-  </body>
+</body>
 </html>
 

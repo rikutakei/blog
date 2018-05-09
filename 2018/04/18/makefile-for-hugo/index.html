@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A website built through Hugo and blogdown.">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.39" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="../../../../index.xml" type="application/rss+xml" title="Riku&#39;s Blog">
+<title>Makefile for Hugo - Riku&#39;s Blog</title>
+</head>
+<body>
+
+	<header>
+		
+		<nav class="nav">
+			<ul class="nav-links" style="text-align: center">
+				<a class="path" href="../../../../">Home</a>
+				
+				<li> <a href="../../../../about/">About</a></li>
+				
+				<li> <a href="../../../../archives/">Archives</a></li>
+				
+				<li> <a href="../../../../tags/">Tags</a></li>
+				
+				<li> <a href="../../../../categories/">Categories</a></li>
+				
+				<li> <a href="https://github.com/rikutakei">GitHub</a></li>
+				
+				<li> <a href="../../../../index.xml" type="application/rss+xml" target="_blank"> <img src="images/social-rss-outline.png" alt="RSS" style="width:25px;height:25px;border:0; vertical-align: -6px"> </a> </li>
+			</ul>
+		</nav>
+		<div class="right">
+			
+		</div>
+	</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="headline" itemprop="headline">Makefile for Hugo</h1>
+  <div class="meta">
+
+    <span class="key">Published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2018-04-18">April 18, 2018</time></span>
+
+
+    <span class="key">in</span>
+    <span class="val">
+
+        <a href="../../../../categories/hugo">Hugo</a>
+
+    </span>
+
+
+    <br>
+    <span class="key">[ Tags:</span>
+    <span class="val">
+        
+        <a href="../../../../tags/make">make</a>
+        
+        <a href="../../../../tags/hugo">hugo</a>
+        
+    </span>
+    ]
+    
+  </div>
+  <section class="body" itemprop="articleBody">
+    <p>So, I&rsquo;ve been using Hugo to generate this blog, and I thought I would make a <code>Makefile</code> to compile and clean up the working directory.</p>
+
+<p>&nbsp;</p>
+
+<p>As you know, Hugo is pretty damn easy to use &ndash; so easy that even I can make my own blog.
+So it is quite natural that you ask:</p>
+
+<blockquote>
+<p><em>&ldquo;Why the hell would you make a <code>Makefile</code> for such a simple task?&rdquo;</em></p>
+</blockquote>
+
+<p>The answer to that is:</p>
+
+<blockquote>
+<p><em><strong>&ldquo;BECAUSE I&rsquo;M LAZY.&rdquo;</strong></em></p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<p>Let me explain the situation I have got myself into.</p>
+
+<p>Firstly, I have my blog source code as a git repository, and have my <code>public/</code> directory as a separate git repository and have it ignored in the blog source repo via <code>.gitignore</code>.</p>
+
+<p>Secondly, I have RMarkdown posts that I convert it into a Markdown document with an R script (instead of converting it to an HTML document with the <code>blogdown</code> package), so Hugo can compile the Markdown with Blackfriday.</p>
+
+<p>Thirdly, I sometimes have to/want to clean up the <code>public/</code> directory to keep it minimal for pushing/publishing the website onto GitHub.</p>
+
+<p>Lastly, I might have some new things to incorporate in my pipeline in the future &ndash; who knows?</p>
+
+<p>&nbsp;</p>
+
+<p>Now, the problems (or more like tasks) that I currently have in my mind are:</p>
+
+<ol>
+<li>How to delete all of the contents in the <code>public/</code> directory, without deleting the <code>.git</code> file.</li>
+<li>Automatically compile the RMarkdown files when they are created/edited.</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>One-off solution would be to manually run the commands that does the above two points.</p>
+
+<p>But how often do I write blog posts anyway?</p>
+
+<p>Probably not enough to remember the commands that I need to run.
+Even if I did write blog posts so often that I remembered the commands, I would still make a <code>Makefile</code>, because running the commands would become too repetitive.</p>
+
+<p>Either way, I would probably want a <code>Makefile</code> so I can just forget about the background commands and processing I need to do to achieve the task.</p>
+
+<p>&nbsp;</p>
+
+<p>So, here&rsquo;s a very simple <code>Makefile</code> I created for my blog pipeline:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># TODO: insert makefile
+</span><span class="c1"></span>awk <span class="s2">&#34;</span><span class="nv">$4</span><span class="s2">&#34;</span> text</code></pre></div>
+<p>If there are any errors in the code, let me know please so I can go and fix it.</p>
+
+<p>&nbsp;</p>
+
+<p>Happy blogging.</p>
+
+  </section>
+</article>
+
+</main>
+
+
+</div>
+
+<footer>
+  <div class="container">
+      <h6>
+          <span class="copyright">&copy; 2018  Riku&#39;s Blog,
+          <span class="base03"> generated with a modified </span>
+          <span class="base03">[</span><span class="base08">b</span><span class="base09">a</span><span class="base0a">s</span><span class="base0b">e</span><span class="base0c">1</span><span class="base0d">6</span><span class="base03">]</span>
+          <span class="base03"># _ theme</span>
+          - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+      </h6>
+  </div>
+</footer>
+
+</body>
+</html>
+

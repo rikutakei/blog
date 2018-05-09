@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A website built through Hugo and blogdown.">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.39" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="../../../../index.xml" type="application/rss+xml" title="Riku&#39;s Blog">
+<title>Vim Post Part 2: Moving Around in Vim - Riku&#39;s Blog</title>
+</head>
+<body>
+
+	<header>
+		
+		<nav class="nav">
+			<ul class="nav-links" style="text-align: center">
+				<a class="path" href="../../../../">Home</a>
+				
+				<li> <a href="../../../../about/">About</a></li>
+				
+				<li> <a href="../../../../archives/">Archives</a></li>
+				
+				<li> <a href="../../../../tags/">Tags</a></li>
+				
+				<li> <a href="../../../../categories/">Categories</a></li>
+				
+				<li> <a href="https://github.com/rikutakei">GitHub</a></li>
+				
+				<li> <a href="../../../../index.xml" type="application/rss+xml" target="_blank"> <img src="images/social-rss-outline.png" alt="RSS" style="width:25px;height:25px;border:0; vertical-align: -6px"> </a> </li>
+			</ul>
+		</nav>
+		<div class="right">
+			
+		</div>
+	</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="headline" itemprop="headline">Vim Post Part 2: Moving Around in Vim</h1>
+  <div class="meta">
+
+    <span class="key">Published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2018-05-07">May 07, 2018</time></span>
+
+
+    <span class="key">in</span>
+    <span class="val">
+
+        <a href="../../../../categories/vim">Vim</a>
+
+    </span>
+
+
+    <br>
+    <span class="key">[ Tags:</span>
+    <span class="val">
+        
+        <a href="../../../../tags/vim">vim</a>
+        
+        <a href="../../../../tags/howto">HowTo</a>
+        
+    </span>
+    ]
+    
+  </div>
+  <section class="body" itemprop="articleBody">
+    
+
+<h1 id="introduction">Introduction</h1>
+
+<p>In my last post, I wrote about modes in Vim and how to save and quit out of Vim, but I didn&rsquo;t touch on how to move around Vim.</p>
+
+<p>You might ask, <em>&ldquo;Why would I want to learn how to move around in Vim when you can just use the mouse and arrow keys?&rdquo;</em></p>
+
+<p>There are a couple of reasons why you shouldn&rsquo;t (or perhaps <em>can&rsquo;t</em>) use the mouse or arrow keys.</p>
+
+<p>Firstly, you probably won&rsquo;t be able to use a mouse on your terminal screen (where you are running Vim), especially if you are remotely connected to a different computer via <code>ssh</code>.</p>
+
+<p>This means that you&rsquo;ll have to use the arrow keys to move the cursor around.
+But using the arrow keys to move the cursor to the correct position is <strong><em>very</em></strong> slow and irritating, so you&rsquo;ll probably ditch that option and revert back to whatever editor you were using previously instead of Vim, so you can use your mouse.</p>
+
+<p>There must be an easier way to move around efficiently, without a mouse or arrow keys, right?
+Or otherwise I wouldn&rsquo;t be writing this post in the first place.</p>
+
+<p>So in this post, I am going to go through a variety of ways to let you move around the file quickly.
+Once you&rsquo;ve mastered these, I can guarantee you that using the mouse or arrow keys will become tedious.</p>
+
+<p>Also, just a quick note that all of the moving around is done in <strong>Normal</strong> mode.</p>
+
+<h2 id="the-vim-way-part-1">The &ldquo;Vim-way&rdquo; &ndash; Part 1</h2>
+
+<p>Before I start this post off, let me just say one thing about Vim.</p>
+
+<p>Vim is designed to minimise the time you leave your hands off of the homerow of the keyboard<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.</p>
+
+<p>Why?</p>
+
+<p>Because when you take your hands off the homerow, you&rsquo;re not ready to type, meaning that you have to move your hand(s) back to the homerow, place your fingers in the right place (forefingers on the <code>f</code> and <code>j</code> keys), and then type.</p>
+
+<p>This slows you down by a fraction of a second, but it can add up quickly if you keep having to do this.</p>
+
+<p>So, most of the moving around in Vim is done by pressing the keys around the homerow, so you can get back to typing as soon as you have finished moving around.</p>
+
+<p>And this is part of the reason why you shouldn&rsquo;t use a mouse or the arrow keys when using Vim &ndash;  it&rsquo;s too far away from the homerow.</p>
+
+<h2 id="arrow-keys-on-the-home-row">Arrow keys on the home row</h2>
+
+<p>So, if you shouldn&rsquo;t use the traditional arrow keys down the bottom right hand corner of the keyboard, what should you use instead?</p>
+
+<p>Well, you should use the <code>h</code>, <code>j</code>, <code>k</code>, and <code>l</code> keys, which corresponds to the right, down, up, and left arrow keys, respectively.</p>
+
+<p>I&rsquo;ve included the <code>h</code> and <code>l</code> keys for completeness, but you probably shouldn&rsquo;t use those keys, as there are much faster alternatives to move left and right.</p>
+
+<p>But <code>j</code> and <code>k</code> keys are great &ndash; go nuts.</p>
+
+<h2 id="moving-around-by-words">Moving around by words</h2>
+
+<p>The more efficient way to move sideways than the <code>h</code> and <code>l</code> keys are by using word-sized hops &ndash; like pressing <code>ctrl</code> and left or right arrow keys in MS Word.</p>
+
+<p>The <code>w</code> key (as in &ldquo;word&rdquo;) lets you jump to the beginning of the next word and <code>e</code> key (as in &ldquo;end&rdquo;) lets you jump to the end of the next word.
+On the other hand, the <code>b</code> key (as in &ldquo;back&rdquo;) lets you move to the beginning of the previous word.</p>
+
+<p>Typing <code>ge</code> lets you move to the end of the previous word, but I wouldn&rsquo;t bother learning it to be honest &ndash; I would just go back twice and go to the end of the word (i.e. <code>bbe</code>).</p>
+
+<p>Take the following sentence as an example, where the cursor is placed on the letter &lsquo;a&rsquo; in &lsquo;awesome&rsquo;:</p>
+
+<blockquote>
+<p>Vim is awesome, but it&rsquo;s hard to learn.</p>
+</blockquote>
+
+<p>Pressing <code>e</code> would move the cursor to the letter &lsquo;e&rsquo; right before the comma, and pressing <code>b</code> would move you back to letter &lsquo;a&rsquo; where you began.</p>
+
+<p>Now, pressing <code>w</code> would move the cursor <em>on</em> the comma, because Vim considers &lsquo;awesome&rsquo; as a word, and the beginning of the next &ldquo;word&rdquo; is the comma.
+Pressing <code>w</code> again would put the cursor on the letter &lsquo;b&rsquo; in &lsquo;but&rsquo;.</p>
+
+<h2 id="moving-within-a-line">Moving within a line</h2>
+
+<p>Pressing <code>w</code>, <code>e</code>, and <code>b</code> a lot can be tiring, especially when the word you want to jump to is at the beginning/end of the line.</p>
+
+<p>This is probably when you should use <code>^</code> (or <code>0</code>) and <code>$</code> keys to move to the beginning and the end of the line, respectively.
+I know it&rsquo;s a bit far away from the homerow, but it might save more time than to just keep pressing <code>w</code>/<code>e</code>/<code>b</code> keys.</p>
+
+<p>Another scenario is where you know which letter you are looking for within the line (e.g. <code>{</code> or <code>}</code>), and you want to jump to it.
+The key you are looking for are the <code>f</code>/<code>F</code>/<code>t</code>/<code>T</code> keys.</p>
+
+<p>The <code>f</code> key (as in &ldquo;find&rdquo;) lets you jump to the next occurence of the particular letter that you type immediately after you press the <code>f</code> key, and <code>t</code> key (as in &ldquo;un<strong>t</strong>il&rdquo;) lets you jump to the position right before the key you press after the <code>t</code> key.</p>
+
+<p>(The capital version of the keys let you search backwards.)</p>
+
+<p>So, if I type <code>fg</code> on a particular line, it would move my cursor to the next occurence (if any) of the letter <code>g</code> on that line.
+If there are multiple <code>g</code>&rsquo;s and you want to go to the next or previous occurence, then press <code>;</code> or <code>,</code> respectively.</p>
+
+<p>I don&rsquo;t use <code>f</code> and <code>t</code> keys regularly, but it&rsquo;s handy to know that there&rsquo;s a way to jump to a particular letter on the line, and also being able to repeat the movement with <code>;</code>/<code>,</code> keys is nifty at times.</p>
+
+<h2 id="moving-around-by-paragraphs">Moving around by paragraphs</h2>
+
+<p>To be honest, I don&rsquo;t really use these keys, but I <em>should</em> use these more often.</p>
+
+<p>The <code>(</code> and <code>)</code> keys lets you move to the beginning of the previous or the next paragraph.</p>
+
+<p>Similar, but slightly different, are the <code>{</code> and <code>}</code> keys, where it lets you skip to the previous and the next <strong>blank line</strong> that follows a paragraph, respectively.</p>
+
+<h2 id="moving-around-by-screen">Moving around by screen</h2>
+
+<p>I think the reason why I don&rsquo;t use paragraph-wise movement is because of these keys &ndash; <code>ctrl-f</code> and <code>ctrl-b</code>.</p>
+
+<p>These two keys &ldquo;scroll&rdquo; your screen forward (<code>ctrl-f</code>) and backward (<code>ctrl-b</code>), and it is <strong><em>FAST</em></strong>.</p>
+
+<p>I usually use these keys to move through the file quickly, looking for the place I need, and when I find what I need, I use the <code>j</code> and <code>k</code> keys to fine-tune the cursor placement to the correct line.
+<em>(And hence why I don&rsquo;t use much paragraph-wise movement)</em></p>
+
+<h2 id="searching-for-a-word-in-a-file">Searching for a word in a file</h2>
+
+<p>Sometimes, scrolling through a massive document to look for a sentence takes too long.</p>
+
+<p>This is when you should use the search function in Vim, which can be started up by using either <code>/</code> or <code>?</code> keys.
+<code>/</code> key lets you search <strong>forward</strong> in the file and <code>?</code> key lets you search <strong>backward</strong> in the file.</p>
+
+<p>You use the search command just like your normal search &ndash; just type <code>/</code> followed by your search term and press <code>enter</code>.</p>
+
+<p>To go to the next match of your search, just press <code>n</code>, and to go to the previous match, press <code>N</code>.</p>
+
+<p>There is a lot more to talk about searching, but I think I will save it for a later post.</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>There you go &ndash; I think I have covered most of the cursor movements available in Vim.</p>
+
+<p>You won&rsquo;t master these keys in a day or two, and it will take time for you to remember.
+But once you remember them, everything will become natural &ndash; it will be engrained into your muscle memory, and you won&rsquo;t even have to think about how to move around to a particular position.</p>
+
+<p>Before I wrap up, here is the list of keys I discussed in this post:</p>
+
+<ul>
+<li>h/j/k/l &ndash; alternative arrow keys</li>
+<li>w/e/b &ndash; word-wise movement</li>
+<li>0/^/$ &ndash; beginning/end of line</li>
+<li>f/F/t/T &ndash; find a letter in a line</li>
+<li>(/)/{/} &ndash; paragraph-wise movement</li>
+<li>ctrl-f/ctrl-b &ndash; screen-wise movement</li>
+<li>/ and ? &ndash; search for a word in a file</li>
+<li>n/N/;/, &ndash; go to the next/previous occurence</li>
+</ul>
+
+<p>Just keep practicing the movements, and don&rsquo;t give up &ndash; these keys <em>will</em> become second nature to you.</p>
+
+<p>Next post will be about editing texts in Vim (finally!!) &ndash; see you in a bit!</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Homerow is the middle row of the keyboard, where the <code>f</code> and <code>j</code> keys are placed. The bumps on the <code>f</code> and <code>j</code> keys are there for a reason.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+  </section>
+</article>
+
+</main>
+
+
+</div>
+
+<footer>
+  <div class="container">
+      <h6>
+          <span class="copyright">&copy; 2018  Riku&#39;s Blog,
+          <span class="base03"> generated with a modified </span>
+          <span class="base03">[</span><span class="base08">b</span><span class="base09">a</span><span class="base0a">s</span><span class="base0b">e</span><span class="base0c">1</span><span class="base0d">6</span><span class="base03">]</span>
+          <span class="base03"># _ theme</span>
+          - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+      </h6>
+  </div>
+</footer>
+
+</body>
+</html>
+

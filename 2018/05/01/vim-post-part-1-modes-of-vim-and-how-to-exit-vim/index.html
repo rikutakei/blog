@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A website built through Hugo and blogdown.">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.39" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="../../../../index.xml" type="application/rss+xml" title="Riku&#39;s Blog">
+<title>Vim Post Part 1: Modes of Vim and How to Exit Vim - Riku&#39;s Blog</title>
+</head>
+<body>
+
+	<header>
+		
+		<nav class="nav">
+			<ul class="nav-links" style="text-align: center">
+				<a class="path" href="../../../../">Home</a>
+				
+				<li> <a href="../../../../about/">About</a></li>
+				
+				<li> <a href="../../../../archives/">Archives</a></li>
+				
+				<li> <a href="../../../../tags/">Tags</a></li>
+				
+				<li> <a href="../../../../categories/">Categories</a></li>
+				
+				<li> <a href="https://github.com/rikutakei">GitHub</a></li>
+				
+				<li> <a href="../../../../index.xml" type="application/rss+xml" target="_blank"> <img src="images/social-rss-outline.png" alt="RSS" style="width:25px;height:25px;border:0; vertical-align: -6px"> </a> </li>
+			</ul>
+		</nav>
+		<div class="right">
+			
+		</div>
+	</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="headline" itemprop="headline">Vim Post Part 1: Modes of Vim and How to Exit Vim</h1>
+  <div class="meta">
+
+    <span class="key">Published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2018-05-01">May 01, 2018</time></span>
+
+
+    <span class="key">in</span>
+    <span class="val">
+
+        <a href="../../../../categories/vim">Vim</a>
+
+    </span>
+
+
+    <br>
+    <span class="key">[ Tags:</span>
+    <span class="val">
+        
+        <a href="../../../../tags/vim">vim</a>
+        
+        <a href="../../../../tags/howto">HowTo</a>
+        
+    </span>
+    ]
+    
+  </div>
+  <section class="body" itemprop="articleBody">
+    
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Alright, so you&rsquo;ve decided that learning Vim was worth your precious time <del>(and you&rsquo;ve made the right choice)</del>.</p>
+
+<p>But where do you begin?</p>
+
+<p>Google is usually a good place to begin your search of &ldquo;How do I learn Vim&rdquo;.
+And it will probably tell you to go to a random Vim emulator website and/or tell you to fire up <code>vimtutor</code> on the command line to &ldquo;get used to Vim&rdquo;.</p>
+
+<p>Although <code>vimtutor</code> isn&rsquo;t too bad, I don&rsquo;t really like emulators and the likes because:</p>
+
+<ol>
+<li>It only teaches you the most basic keys and commands, and yet misses the minor (but important) keys/commands that will make your life easier</li>
+<li>It feels like the order you learn things from these programs are disjointed and not very logical</li>
+<li>It&rsquo;s a &ldquo;crash course&rdquo; without notes, and you&rsquo;re probably unlikely to remember the keys/commands after finishing the tutorial</li>
+</ol>
+
+<p>So, I am going to go through some stuff that <em><em>I</em></em> believe is a bare minimum to get you started with Vim &ndash; enough so that you&rsquo;ll be able to perform day-to-day editing tasks with ease.
+Also, you&rsquo;ll be able to keep the page open for quick reference while you try out the commands out in Vim.</p>
+
+<p>&nbsp;</p>
+
+<p>In the upcoming series of posts, I would like to first cover the basic concepts of Vim, and then introduce you to some of the commands/keys in Vim to get you started.</p>
+
+<p>Specifically, I would like to cover:</p>
+
+<ul>
+<li>Modes of Vim</li>
+<li>Saving/quitting Vim</li>
+<li>Moving around in Vim</li>
+<li>Basic editing commands</li>
+<li>Extra and useful commands</li>
+</ul>
+
+<p>In this particular post, I will cover the modes of Vim, and how to save/quit Vim.</p>
+
+<p>Okay, enough intro &ndash; let&rsquo;s get started.</p>
+
+<h1 id="modes-of-vim">Modes of Vim</h1>
+
+<p>I think the concept of &ldquo;Modes&rdquo; in Vim should be taught first, even before learning how to move around in Vim.</p>
+
+<p>Modes in Vim are a way to get the users to use specific tool for a specific task.</p>
+
+<p>If this confuses you, consider a scenario where you are writing something down on a paper &ndash; maybe a lecture note or something.
+You will be using a pen or a pencil to scribble down your thoughts, but then you make a mistake and have to correct it.</p>
+
+<p>So, you use your eraser or a correction fluid to remove the error.</p>
+
+<p>After that, you decide to rule a line below your title to make it look nice, so you take out your ruler to draw a straight line.</p>
+
+<p>In this scenario, the pencil, the eraser, and the ruler are equivalent to <strong>modes</strong> &ndash; you use each tool in a specific way to achieve a specific result.
+<em>(Note that you can&rsquo;t use one tool to (efficiently) do a task of another &ndash; e.g. you can&rsquo;t write with an eraser.)</em></p>
+
+<p>There are three main modes of Vim:</p>
+
+<ol>
+<li>Normal mode</li>
+<li>Insert mode</li>
+<li>Visual mode</li>
+</ol>
+
+<p>There are few more minor modes, but if you know the above three, you will have no problem understanding the other concepts I will be talking about in the future.</p>
+
+<h2 id="normal-mode">Normal mode</h2>
+
+<p>Normal mode is the default mode that Vim will place you when it is fired up.
+This mode will undoubtedly be the most used mode in Vim, because the main purpose of this mode is to <strong><em>edit</em></strong> your texts.</p>
+
+<p><em>Editing</em> something and <em>writing</em> something are two completely different tasks, and I hope we can all agree that editing requires more effort and time than writing.</p>
+
+<p>Now, this means that this mode doesn&rsquo;t do a good job of actually <em>writing</em> whatever you want to write, so people usually panic when nothing happens when they try typing stuff.
+And, better yet, Vim has a cryptic way to exit out of its program, which leads to the classic <em>&ldquo;How do I get out of this shit hole&rdquo;</em> problem (answer to this is further down the page).</p>
+
+<p>So then, how do you actually <em>write</em> stuff?</p>
+
+<h2 id="insert-mode">Insert mode</h2>
+
+<p>As I have alluded just a few lines above, insert mode is the mode in which you <strong><em>write</em></strong> stuff.</p>
+
+<p>When you enter insert mode, you are in an interface equivalent to your other editors where you can type stuff and see what you have typed on the screen.</p>
+
+<p>So, how do you enter insert mode?
+Easy &ndash; just press <code>i</code> once  when you are in normal mode, and you should be able to type whatever you want.</p>
+
+<p>While you are in insert mode, note that there should be some text on the bottom left hand corner that look like <code>-- INSERT --</code>.
+This shows you that you are in insert mode.</p>
+
+<p>Once you&rsquo;re done with editing, just press <code>esc</code> button to go back to normal mode and you should see the <code>-- INSERT --</code> text disappear, and you are back in normal mode.</p>
+
+<h2 id="visual-mode">Visual mode</h2>
+
+<p>Visual mode is kinda weird, but bloody useful once you start using it.</p>
+
+<p>This mode isn&rsquo;t for editing or writing, but specifically used for <strong><em>selecting</em></strong> texts (or parts of texts) you want to do something with.
+This mode is equivalent to click-and-dragging parts of text in MS Word to highlight the text.</p>
+
+<p>The thing is, <em>visual mode doesn&rsquo;t require you to use the mouse to select texts</em>.</p>
+
+<p>I&rsquo;ll touch on this a little bit later, but for now, just press <code>v</code> in normal mode to enter visual mode.</p>
+
+<p>Again, you should see <code>-- VISUAL --</code> at the bottom left hand corner of the screen, and pressing <code>esc</code> should put you back into normal mode.</p>
+
+<p>Easy, right?</p>
+
+<h1 id="saving-quitting-vim">Saving/quitting Vim</h1>
+
+<p>The first &ldquo;wall&rdquo; that everyone hits when learning Vim is <strong><em>&ldquo;How the fuck do I get out of Vim&rdquo;</em></strong>.</p>
+
+<p>First thing most people try is to press <code>ctrl-c</code>, since that is the shortcut key to kill a program in bash.</p>
+
+<p>Wrong.</p>
+
+<p>Next, people would fire up firefox or chrome and ask Google how to quit out of Vim, and get an answer along the line of &ldquo;Just press <code>esc</code> a few times and then type <code>:q!</code> then press <code>enter</code>&rdquo;.</p>
+
+<p>Correct, but you are likely to never find out <em>why</em> that works, and will be traumatised by the whole experience and end up never using Vim.</p>
+
+<p>So, let me explain what is being done.</p>
+
+<p>As you may have guessed from trying out insert and visual modes, the <code>esc</code> key sends you back to normal mode (the default mode in Vim).</p>
+
+<p>Then, in normal mode, you type <code>:</code>, which is a special &ldquo;command&rdquo; in normal mode that allows you to tell Vim to execute a command.
+It&rsquo;s like executing a function in other programming languages.</p>
+
+<p>Now, the command to quit and save your file in Vim are <code>quit</code> and <code>write</code>, respectively.
+However, for people who can&rsquo;t be bothered typing out <code>quit</code> and <code>write</code> every time they want to save or quit out of Vim, there is an abbreviation for each of them, which happens to be the first letter of the commands (i.e. <code>q</code> and <code>w</code>).</p>
+
+<p>So now we can see that by typing <code>:q</code>, we are telling Vim to quit &ndash;  but what does the <code>!</code> mark do?</p>
+
+<p>The <code>!</code> mark tells Vim to <strong><em>force</em></strong> the command to be executed.
+In other words, it tells Vim to quit out even if it has some errors or warnings along the way &ndash; for example, a warning to the user that there are unsaved changes in the file.</p>
+
+<p>So, taken together, we see that by typing <code>:q!</code>, we are telling Vim to force quit out of Vim without saving any changes made to the file.
+Obviously, you can save the file first by typing <code>:w</code> and then <code>:q</code> (or <code>:wq</code> to save and quit in a single command).</p>
+
+<p><em>(Don&rsquo;t forget to press <code>enter</code> after each command!)</em></p>
+
+<p>So, there you go &ndash; you can now save and quit out of Vim like a pro, and actually understand what you are doing.</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>There are three modes of Vim: Normal (default), Insert, and Visual.</p>
+
+<p>To save/quit out of Vim, you need to first get back into normal mode and execute the <code>:quit</code> or <code>:write</code> commands.</p>
+
+<p>Hope you enjoyed this post &ndash; next post will be about some basic keys/commands for editing stuff.</p>
+
+  </section>
+</article>
+
+</main>
+
+
+</div>
+
+<footer>
+  <div class="container">
+      <h6>
+          <span class="copyright">&copy; 2018  Riku&#39;s Blog,
+          <span class="base03"> generated with a modified </span>
+          <span class="base03">[</span><span class="base08">b</span><span class="base09">a</span><span class="base0a">s</span><span class="base0b">e</span><span class="base0c">1</span><span class="base0d">6</span><span class="base03">]</span>
+          <span class="base03"># _ theme</span>
+          - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+      </h6>
+  </div>
+</footer>
+
+</body>
+</html>
+

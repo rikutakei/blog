@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Make on Riku&#39;s Blog</title>
+    <link>/tags/make/</link>
+    <description>Recent content in Make on Riku&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Apr 2018 16:32:30 +1200</lastBuildDate>
+    
+	<atom:link href="/tags/make/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Makefile for Hugo</title>
+      <link>/2018/04/18/makefile-for-hugo/</link>
+      <pubDate>Wed, 18 Apr 2018 16:32:30 +1200</pubDate>
+      
+      <guid>/2018/04/18/makefile-for-hugo/</guid>
+      <description>So, I&amp;rsquo;ve been using Hugo to generate this blog, and I thought I would make a Makefile to compile and clean up the working directory.
+&amp;nbsp;
+As you know, Hugo is pretty damn easy to use &amp;ndash; so easy that even I can make my own blog. So it is quite natural that you ask:
+ &amp;ldquo;Why the hell would you make a Makefile for such a simple task?&amp;rdquo;
+ The answer to that is:</description>
+    </item>
+    
+  </channel>
+</rss>
