@@ -11,6 +11,7 @@
     
     
     <item>
+<<<<<<< HEAD
       <title>Hugo</title>
       <link>/categories/hugo/</link>
       <pubDate>Wed, 18 Apr 2018 16:32:30 +1200</pubDate>
@@ -25,6 +26,13 @@
       <pubDate>Wed, 18 Apr 2018 12:35:35 +1200</pubDate>
       
       <guid>/categories/linux/</guid>
+=======
+      <title>Markdown</title>
+      <link>/categories/markdown/</link>
+      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      
+      <guid>/categories/markdown/</guid>
+>>>>>>> e98b43b01f55f9a867c65e176ff26e127c91a22f
       <description></description>
     </item>
     
