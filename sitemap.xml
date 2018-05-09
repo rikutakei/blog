@@ -3,7 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-<<<<<<< HEAD
     <loc>/2018/05/07/vim-post-part-2-moving-around-in-vim/</loc>
     <lastmod>2018-05-07T20:20:47+12:00</lastmod>
     <changefreq>daily</changefreq>
@@ -50,65 +49,6 @@
     <lastmod>2018-03-20T18:05:25+13:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-=======
-    <loc>/about/</loc>
-    <lastmod>2018-03-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/archives/</loc>
-    <lastmod>2018-03-20T18:05:25+13:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/03/09/test-blog-post/</loc>
-    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/03/09/test-blog-post/</loc>
-    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/03/09/test-blog-post/</loc>
-    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/03/09/test-blog-post/</loc>
-    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/03/09/test-blog-post/</loc>
-    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/03/09/test-blog-post/</loc>
-    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/03/09/test-blog-post/</loc>
-    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/03/09/test-blog-post/</loc>
-    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2016/12/30/a-plain-markdown-post/</loc>
-    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2016/12/30/a-plain-markdown-post/</loc>
-    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
->>>>>>> e98b43b01f55f9a867c65e176ff26e127c91a22f
   </url>
   
   <url>
@@ -125,30 +65,20 @@
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>/tags/config/</loc>
     <lastmod>2018-04-18T12:35:35+12:00</lastmod>
     <changefreq>daily</changefreq>
-=======
-    <loc>/categories/</loc>
->>>>>>> e98b43b01f55f9a867c65e176ff26e127c91a22f
     <priority>0</priority>
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>/tags/dot-files/</loc>
     <lastmod>2018-04-18T12:35:35+12:00</lastmod>
     <changefreq>daily</changefreq>
-=======
-    <loc>/tags/markdown/</loc>
-    <lastmod>2015-01-01T13:09:13-06:00</lastmod>
->>>>>>> e98b43b01f55f9a867c65e176ff26e127c91a22f
     <priority>0</priority>
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>/tags/git/</loc>
     <lastmod>2018-04-18T12:35:35+12:00</lastmod>
     <changefreq>daily</changefreq>
@@ -187,10 +117,6 @@
     <loc>/tags/make/</loc>
     <lastmod>2018-04-18T16:32:30+12:00</lastmod>
     <changefreq>daily</changefreq>
-=======
-    <loc>/categories/markdown/</loc>
-    <lastmod>2015-01-01T13:09:13-06:00</lastmod>
->>>>>>> e98b43b01f55f9a867c65e176ff26e127c91a22f
     <priority>0</priority>
   </url>
   
@@ -203,12 +129,8 @@
   
   <url>
     <loc>/post/</loc>
-<<<<<<< HEAD
     <lastmod>2018-05-07T20:20:47+12:00</lastmod>
     <changefreq>daily</changefreq>
-=======
-    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
->>>>>>> e98b43b01f55f9a867c65e176ff26e127c91a22f
     <priority>0</priority>
   </url>
   
@@ -241,14 +163,7 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2018-03-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/</loc>
-<<<<<<< HEAD
     <lastmod>2018-04-18T12:35:35+12:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
@@ -265,9 +180,6 @@
     <loc>/categories/vim/</loc>
     <lastmod>2018-05-07T20:20:47+12:00</lastmod>
     <changefreq>daily</changefreq>
-=======
-    <lastmod>2015-01-01T13:09:13-06:00</lastmod>
->>>>>>> e98b43b01f55f9a867c65e176ff26e127c91a22f
     <priority>0</priority>
   </url>
   
