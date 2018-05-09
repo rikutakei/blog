@@ -93,14 +93,14 @@
   </url>
   
   <url>
-    <loc>/categories/hugo/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2018-04-18T16:32:30+12:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/hugo/</loc>
+    <loc>/categories/hugo/</loc>
     <lastmod>2018-04-18T16:32:30+12:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
@@ -170,14 +170,14 @@
   </url>
   
   <url>
-    <loc>/categories/vim/</loc>
+    <loc>/tags/vim/</loc>
     <lastmod>2018-05-07T20:20:47+12:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/vim/</loc>
+    <loc>/categories/vim/</loc>
     <lastmod>2018-05-07T20:20:47+12:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
